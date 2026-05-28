@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { QrCode, ExternalLink, Globe, Sparkles, Check, Copy } from "lucide-react";
 
 export default function EndingSection() {
-  const [websiteUrl, setWebsiteUrl] = useState("https://mechi.edu");
+  const [websiteUrl, setWebsiteUrl] = useState("https://mechi-xi.vercel.app");
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
