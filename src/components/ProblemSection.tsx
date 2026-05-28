@@ -26,26 +26,34 @@ export default function ProblemSection() {
   ];
 
   return (
-    <section id="problem" className="relative h-screen w-screen flex flex-col justify-between bg-white overflow-hidden p-8 md:p-16 xl:p-20 presentation-bg border-b border-brand-beige">
+    <section
+      id="problem"
+      className="relative h-screen w-screen flex flex-col justify-between bg-white overflow-hidden p-8 md:p-16 xl:p-20 presentation-bg border-b border-brand-beige"
+    >
       <header className="flex justify-between items-start z-10 w-full shrink-0">
         <div className="space-y-1">
           <div className="w-12 h-1 bg-brand-orange rounded-full mb-3"></div>
           <span className="uppercase tracking-[0.3em] text-[10px] md:text-xs font-bold text-[#A5A5A5]">
-            Стартап Танилцуулга / 2026 оны III улирал
+            Mechi Танилцуулга / 2026 он
           </span>
         </div>
       </header>
 
       <div className="flex-1 max-w-6xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center z-10 mt-6 lg:mt-0">
-        
         <div className="lg:col-span-5 flex flex-col justify-center">
-          <div className="font-mono text-xs uppercase tracking-[0.25em] text-[#A5A5A5] font-semibold mb-3">01 / Тулгарч буй сорилт</div>
+          <div className="font-mono text-xs uppercase tracking-[0.25em] text-[#A5A5A5] font-semibold mb-3">
+            01 / Тулгарч буй сорилт
+          </div>
           <h2 className="text-4xl md:text-5xl font-display font-light text-brand-charcoal tracking-tight leading-none mb-6">
             Хятад хэл яагаад <br />
-            <span className="italic font-serif text-brand-orange font-medium">хүрэшгүй</span> мэт санагддаг вэ
+            <span className="italic font-serif text-brand-orange font-medium">
+              хүрэшгүй
+            </span>{" "}
+            мэт санагддаг вэ
           </h2>
           <p className="text-brand-charcoal/70 text-sm md:text-base font-light leading-relaxed mb-6">
-            Хэлний бүтэц, дүрмийн эрс ялгаатай байдлаас шалтгаалж монгол сурагчдад сэтгэл зүйн том саад болдог.
+            Хэлний бүтэц, дүрмийн эрс ялгаатай байдлаас шалтгаалж монгол
+            сурагчдад сэтгэл зүйн том саад болдог.
           </p>
           <div className="h-[1px] w-full bg-[#EAE7E2] mb-6"></div>
           <p className="text-brand-charcoal/40 text-[11px] font-mono leading-relaxed uppercase tracking-wider">
@@ -75,7 +83,6 @@ export default function ProblemSection() {
             </motion.div>
           ))}
         </div>
-
       </div>
 
       <footer className="h-4 shrink-0 hidden md:block"></footer>

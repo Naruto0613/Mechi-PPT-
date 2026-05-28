@@ -5,62 +5,69 @@ export default function FlowSection() {
   const steps = [
     {
       num: "01",
-      title: "Ханз сурах",
+      title: "Ханз тогтоох суурь",
       subtitle: "Суурь дүрс үсэг",
-      desc: "Ханзны анхны зурлагаас эхлэн байгалийн холбоосоор ханз бэлгэдлийг амархан тогтооно."
+      desc: "Ханзны анхны зурлагаас эхлэн логик дүрслэл, байгалийн зүй тогтлоор дамжуулж бэлгэдлийг нь хялбар тогтооно.",
     },
     {
       num: "02",
-      title: "Дуудлага давтах",
+      title: "Зөв дуудлага, өргөлт",
       subtitle: "Пиньинь ба Үгийн холбоос",
-      desc: "Монгол дуудлагаа хэрэгцээт авиануудтай уялдуулж, зөв өргөлтийг хялбар заана."
+      desc: "Монгол хэлний авиаг хятад хэлний пиньинь дуудлагатай уялдуулан харьцуулж, зөв өргөлтийг хялбар эзэмшүүлнэ.",
     },
     {
       num: "03",
-      title: "Сонсгол сайжруулах",
+      title: "Сонсгол хөгжүүлэх",
       subtitle: "Аялга эзэмших нь",
-      desc: "Хятад хэлний дөрвөн өргөлт, авиаг чихээрээ маш хурдан ялгах дасгалуудтай."
+      desc: "Хятад хэлний 4 үндсэн аялга, авиаг сонсголоороо маш хурдан ялгаж сурах тусгай дасгалууд.",
     },
     {
       num: "04",
-      title: "Өгүүлбэр унших",
+      title: "Өгүүлбэр зүй, Уншлага",
       subtitle: "Бүтцийн зэрэгцүүлэлт",
-      desc: "Тусдаа үг биш бүтэн өгүүлбэрийн дарааллыг монгол хэлтэй уялдуулж сурна."
+      desc: "Салангид үгс биш, бүтэн өгүүлбэрийн бүтцийг монгол хэлний сэтгэхүйн дараалалтай уялдуулан судална.",
     },
     {
       num: "05",
-      title: "Үгсээ органикаар тэлэх",
+      title: "Үгсийн санг органикаар тэлэх",
       subtitle: "Агуулгын бататгал",
-      desc: "Амьд яриа, түүх, сонирхолтой сэдвүүдээр дамжуулан үгсийн сангаа тэлнэ."
-    }
+      desc: "Бодит амьд яриа, сонирхолтой түүх, сэдвүүдэд суурилан үгсийн санг байгалийн жамаар (органикаар) баяжуулна.",
+    },
   ];
 
   return (
-    <section id="flow" className="relative h-screen w-screen flex flex-col justify-between bg-white overflow-hidden p-8 md:p-16 xl:p-20 presentation-bg border-b border-brand-beige">
+    <section
+      id="flow"
+      className="relative h-screen w-screen flex flex-col justify-between bg-white overflow-hidden p-8 md:p-16 xl:p-20 presentation-bg border-b border-brand-beige"
+    >
       <header className="flex justify-between items-start z-10 w-full shrink-0">
         <div className="space-y-1">
           <div className="w-12 h-1 bg-brand-orange rounded-full mb-3"></div>
           <span className="uppercase tracking-[0.3em] text-[10px] md:text-xs font-bold text-[#A5A5A5]">
-            Стартап Танилцуулга / 2026 оны III улирал
+            Mechi Танилцуулга / 2026 он
           </span>
         </div>
       </header>
 
       <div className="flex-grow max-w-6xl w-full mx-auto z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mt-6 lg:mt-0">
-        
         <div className="lg:col-span-4 flex flex-col justify-center">
-          <div className="font-mono text-xs uppercase tracking-[0.25em] text-[#A5A5A5] font-semibold mb-3">05 / Суралцах аялал</div>
+          <div className="font-mono text-xs uppercase tracking-[0.25em] text-[#A5A5A5] font-semibold mb-3">
+            05 / Суралцах аялал
+          </div>
           <h2 className="text-4xl md:text-5xl font-display font-light text-brand-charcoal tracking-tight leading-none mb-6 font-sans leading-tight">
             Суралцах үндсэн <br />
-            <span className="italic font-serif text-brand-orange font-medium">замнал</span>
+            <span className="italic font-serif text-brand-orange font-medium">
+              замнал
+            </span>
           </h2>
           <p className="text-[#7A7A7A] text-sm md:text-base font-light leading-relaxed mb-6">
-            Огцом шилжилтгүйгээр анхны зурлагаас амьд ярианы харилцаа хүртэлх 5 шатлалт суралцах зам.
+            Огцом шилжилтгүйгээр, анхны зурлагаас эхлэн амьд ярианы түвшинд
+            хүртэлх 5 үе шаттай сургалтын систем.
           </p>
           <div className="h-[1px] w-full bg-[#EAE7E2] mb-6"></div>
           <div className="flex items-center gap-2.5 text-[#A5A5A5] font-mono text-xs font-bold uppercase tracking-wider">
             <CheckCircle2 className="w-4 h-4 text-brand-orange shrink-0" />
-            <span>Баталгаажсан сургалтын зүй тогтолт систем</span>
+            <span>БАТАЛГААЖСАН СУРГАЛТЫН ТОГТОЛЦОО, СИСТЕМ</span>
           </div>
         </div>
 
@@ -102,7 +109,6 @@ export default function FlowSection() {
             </motion.div>
           ))}
         </div>
-
       </div>
 
       {/* Slide footer spacer */}

@@ -3,55 +3,63 @@ import { Check, X, ShieldAlert, Zap } from "lucide-react";
 
 export default function WhyMechiSection() {
   const traditionalPoints = [
-    "Холбоосгүйгээр цаасан дээр хуурай бичиж цээжлэх оролдлого.",
-    "Монгол хүний онцлогийг тусгаагүй ерөнхий орчуулгатай ном.",
-    "Унших, ярих дасгал нь хоорондоо холбогдоогүй систем.",
-    "Орчин үеийн залуусын сонирхлыг бууруулах хуучин уур амьсгал."
+    "Контекстгүйгээр, цаасан дээр механикаар давтан бичиж цээжлэх оролдлого.",
+    "Монгол суралцагчийн сэтгэхүйн онцлогт тохируулаагүй, шууд орчуулгын сурах бичиг.",
+    "Унших, сонсох, ярих чадваруудыг тусгаарласан, уялдаа холбоогүй систем.",
+    "Сурах идэвхийг бууруулдаг хуучирсан хэв маяг, уур амьсгал.",
   ];
 
   const mechiPoints = [
     {
-      title: "Зөн совингийн дүрст холбоос",
-      text: "Ханзны зураасуудыг танил зураг, дүрсээр хялбархан цээжилнэ."
+      title: "Зөн совингийн харааны холбоос",
+      text: "Ханзны зурлагуудыг танил дүрслэл, логик зурагтай холбож, байгалийн жамаар тогтооно.",
     },
     {
-      title: "Монгол сурагчдад чиглэсэн дизайн",
-      text: "Монгол суралцагчдад зориулсан дуудлага, бүтцийн ухаалаг гүүр."
+      title: "Монгол суралцагчдад зориулсан бүтэц",
+      text: "Монгол хүний авиа зүй болон сэтгэхүйн онцлогт тохируулсан сургалтын ухаалаг гүүр.",
     },
     {
-      title: "Үл тасалдах цогц холбоо",
-      text: "Ханз цээжлэх, сонсох, ярих, унших үйлдлийг нэгэн зэрэг давтана."
+      title: "Чадваруудын цогц уялдаа холбоо",
+      text: "Ханз тогтоох, сонсох, ярих, унших үйлдлүүдийг нэгдсэн системээр зэрэг хөгжүүлнэ.",
     },
     {
       title: "Цэгцтэй, шинэлэг орчин",
-      text: "Орчин үеийн залууст зориулсан сатаарах зүйлгүй, цэвэр дизайн."
-    }
+      text: "Сатаарах хүчин зүйлгүй, төвлөрлийг дээд зэргээр хангах минималист дизайн.",
+    },
   ];
 
   return (
-    <section id="why-mechi" className="relative h-screen w-screen flex flex-col justify-between bg-brand-cream overflow-hidden p-8 md:p-16 xl:p-20 presentation-bg border-b border-brand-beige">
+    <section
+      id="why-mechi"
+      className="relative h-screen w-screen flex flex-col justify-between bg-brand-cream overflow-hidden p-8 md:p-16 xl:p-20 presentation-bg border-b border-brand-beige"
+    >
       <header className="flex justify-between items-start z-10 w-full shrink-0">
         <div className="space-y-1">
           <div className="w-12 h-1 bg-brand-orange rounded-full mb-3"></div>
           <span className="uppercase tracking-[0.3em] text-[10px] md:text-xs font-bold text-[#A5A5A5]">
-            Стартап Танилцуулга / 2026 оны III улирал
+            Mechi Танилцуулга / 2026 он
           </span>
         </div>
       </header>
 
       <div className="flex-grow max-w-6xl w-full mx-auto z-10 flex flex-col justify-center mt-6 lg:mt-0">
         <div className="mb-8">
-          <div className="font-mono text-xs uppercase tracking-[0.25em] text-[#A5A5A5] font-semibold mb-3">06 / Стратегийн давуу тал</div>
+          <div className="font-mono text-xs uppercase tracking-[0.25em] text-[#A5A5A5] font-semibold mb-3">
+            06 / Стратегийн давуу тал
+          </div>
           <h2 className="text-4xl md:text-5xl font-display font-light text-brand-charcoal tracking-tight leading-none mb-4 font-sans leading-tight">
-            Стандартыг <span className="italic font-serif text-brand-orange font-medium">Шинэчлэх нь</span>
+            Стандартыг{" "}
+            <span className="italic font-serif text-brand-orange font-medium">
+              Шинэчлэх нь
+            </span>
           </h2>
           <p className="text-[#7A7A7A] text-sm md:text-base font-light max-w-2xl leading-relaxed">
-            Хуучин механик арга болон Mechi-гийн ухаалаг системийн бодит ялгаа.
+            Уламжлалт механик цээжлэлт болон Mechi платформын ухаалаг системийн
+            бодит ялгаа.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
-
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -65,12 +73,16 @@ export default function WhyMechiSection() {
                   <ShieldAlert className="w-5 h-5 text-brand-charcoal/40" />
                 </div>
                 <div>
-                  <span className="font-mono text-[9px] uppercase tracking-wider text-brand-charcoal/40 block font-bold">ХУУЧИРСАН СУРГАЛТЫН ТӨЛӨВЛӨГӨӨ</span>
-                  <h3 className="text-lg font-display font-bold text-brand-charcoal/50">Уламжлалт аргууд</h3>
+                  <span className="font-mono text-[9px] uppercase tracking-wider text-brand-charcoal/40 block font-bold">
+                    ХУУЧИРСАН СУРГАЛТЫН ТӨЛӨВЛӨГӨӨ
+                  </span>
+                  <h3 className="text-lg font-display font-bold text-brand-charcoal/50">
+                    Уламжлалт аргууд
+                  </h3>
                 </div>
               </div>
               <div className="h-[1px] bg-brand-charcoal/10 mb-5"></div>
-              
+
               <ul className="space-y-3.5">
                 {traditionalPoints.map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
@@ -82,9 +94,10 @@ export default function WhyMechiSection() {
                 ))}
               </ul>
             </div>
-            
+
             <div className="mt-6 text-[10px] font-mono text-brand-charcoal/30 tracking-widest uppercase font-bold">
-              ЭХНИЙ ШАНТРАЛТЫН ӨНДӨР ХУВЬ // Анхны сургалтын ~70% нь хаядаг
+              СУРАЛЦАГЧДЫН ШАНТРАЛТЫН ӨНДӨР ХУВЬ // УЛАМЖЛАЛТ СУРГАЛТЫН
+              ТАТГАЛЗАЛТ ~70%
             </div>
           </motion.div>
 
@@ -101,8 +114,12 @@ export default function WhyMechiSection() {
                   <Zap className="w-5 h-5 text-brand-orange" />
                 </div>
                 <div>
-                  <span className="font-mono text-[9px] uppercase tracking-wider text-brand-orange block font-bold">ШИНЭ ҮЕИЙН СУРГАЛТЫН ЗҮЙ</span>
-                  <h3 className="text-lg font-display font-bold text-brand-charcoal">Mechi-гийн хандлага</h3>
+                  <span className="font-mono text-[9px] uppercase tracking-wider text-brand-orange block font-bold">
+                    ШИНЭ ҮЕИЙН СУРГАЛТЫН АРГА ЗҮЙ
+                  </span>
+                  <h3 className="text-lg font-display font-bold text-brand-charcoal">
+                    Mechi-гийн хандлага
+                  </h3>
                 </div>
               </div>
               <div className="h-[1px] bg-brand-orange/10 mb-5"></div>
@@ -127,10 +144,10 @@ export default function WhyMechiSection() {
             </div>
 
             <div className="mt-6 text-[10px] font-mono text-brand-orange tracking-widest uppercase font-bold">
-              ТОГТООЛТЫН ИЛҮҮ ӨНДӨР ҮЗҮҮЛЭЛТ // Урт хугацааны сонирхол ба итгэл
+              ТОГТООЛТЫН ӨНДӨР ҮР ДҮН // УРТ ХУГАЦААНЫ ИДЭВХ БА ТАСРАЛТГҮЙ
+              ХӨГЖИЛ
             </div>
           </motion.div>
-
         </div>
       </div>
 

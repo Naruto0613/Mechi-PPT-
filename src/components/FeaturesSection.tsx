@@ -5,61 +5,70 @@ export default function FeaturesSection() {
   const features = [
     {
       icon: <Edit3 className="w-5 h-5 text-brand-orange" />,
-      title: "Ханз үсэг сурах",
+      title: "Ханз тогтоох арга зүй",
       subtitle: "Тогтоох язгуурууд",
-      text: "Түвэгтэй ханзыг монгол хүний сэтгэхүйд ойр харааны дүрсээр холбон хурдан тогтооно."
+      text: "Төвөгтэй ханзуудыг монгол хүний сэтгэхүйн онцлогт тохируулан, харааны дүрслэлээр дамжуулж цээжлэлгүйгээр тогтооно.",
     },
     {
       icon: <BookOpen className="w-5 h-5 text-brand-orange" />,
-      title: "Унших дасгал",
+      title: "Унших чадвар",
       subtitle: "Найруулгын бүтэц",
-      text: "Монгол болон хятад хэлний өгүүлбэрийн бүтцийг зэрэгцүүлж, шилжилтийг тодруулна."
+      text: "Монгол болон хятад хэлний өгүүлбэрийн зүй тогтлыг харьцуулан судалж, орчуулгын шилжилтийг логиктойгоор ойлгоно.",
     },
     {
       icon: <Mic2 className="w-5 h-5 text-brand-orange" />,
-      title: "Сонсох дасгал",
+      title: "Сонсох ба Дуудах чадвар",
       subtitle: "Аялга удирдах заавар",
-      text: "Монгол хүний дуудлагын онцлогт багтаан хятад хэлний 4 аялгыг долгионоор зөв суулгана."
+      text: "Монгол хүний авиа зүйн онцлогт суурилан, хятад хэлний 4 үндсэн аялга, дуудлагыг авианы долгионоор зөв эзэмшүүлнэ.",
     },
     {
       icon: <Compass className="w-5 h-5 text-brand-orange" />,
       title: "Үгсийн санг тэлэх",
       subtitle: "Агуулгад суурилсан давталт",
-      text: "Ухаалаг давтах хуваариар дамжуулан үгсийн санг цээжлэхгүйгээр өөрөө тогтооно."
+      text: "Ухаалаг давталтын алгоритмаар дамжуулан шинэ үгсийг хүчлэн цээжлэх шаардлагагүйгээр урт хугацааны ой санамжид үлдээнэ.",
     },
     {
       icon: <Award className="w-5 h-5 text-brand-orange" />,
       title: "Шат дараалсан сургалт",
       subtitle: "Дасан зохицох шатлал",
-      text: "Тэг сууриас эхлэн бизнесийн чөлөөт яриа хүртэл системтэй, шат дараалсан богино хичээл."
+      text: "Анхан шатны тэг сууриас эхлэн бизнесийн түвшний чөлөөт яриа хүртэл тасралтгүй ахих системтэй, үе шаттай хичээлүүд.",
     },
     {
       icon: <Heart className="w-5 h-5 text-brand-orange" />,
       title: "Сурагчид ээлтэй дизайн",
       subtitle: "Сатаарах зүйлгүй төвлөрөл",
-      text: "Зар сурталчилгаа болон элдэв сатааруулах зүйлгүйгээр зөвхөн хичээлдээ төвлөрнө."
-    }
+      text: "Ямар нэгэн зар сурталчилгаа болон сатааруулах хүчин зүйлгүй, зөвхөн сургалтад зориулсан минималист орчин.",
+    },
   ];
 
   return (
-    <section id="features" className="relative h-screen w-screen flex flex-col justify-between bg-brand-cream overflow-hidden p-8 md:p-16 xl:p-20 presentation-bg border-b border-brand-beige">
+    <section
+      id="features"
+      className="relative h-screen w-screen flex flex-col justify-between bg-brand-cream overflow-hidden p-8 md:p-16 xl:p-20 presentation-bg border-b border-brand-beige"
+    >
       <header className="flex justify-between items-start z-10 w-full shrink-0">
         <div className="space-y-1">
           <div className="w-12 h-1 bg-brand-orange rounded-full mb-3"></div>
           <span className="uppercase tracking-[0.3em] text-[10px] md:text-xs font-bold text-[#A5A5A5]">
-            Стартап Танилцуулга / 2026 оны III улирал
+            Mechi Танилцуулга / 2026 он
           </span>
         </div>
       </header>
 
       <div className="flex-1 max-w-6xl w-full mx-auto z-10 flex flex-col justify-center mt-6 lg:mt-0">
         <div className="mb-8 text-center max-w-2xl mx-auto">
-          <div className="font-mono text-xs uppercase tracking-[0.25em] text-[#A5A5A5] font-semibold mb-3">04 / Бүтээгдэхүүний бүтэц</div>
+          <div className="font-mono text-xs uppercase tracking-[0.25em] text-[#A5A5A5] font-semibold mb-3">
+            04 / Бүтээгдэхүүний бүтэц
+          </div>
           <h2 className="text-4xl md:text-5xl font-display font-light text-brand-charcoal tracking-tight leading-none mb-4 font-sans max-w-xl mx-auto leading-tight">
-            Бидний үндсэн <span className="italic font-serif text-brand-orange font-medium">экосистем</span>
+            Бидний үндсэн{" "}
+            <span className="italic font-serif text-brand-orange font-medium">
+              экосистем
+            </span>
           </h2>
           <p className="text-[#7A7A7A] text-xs md:text-sm font-light leading-relaxed">
-            Суралцах дээд зэргийн үр дүнг хангах ухаалаг экосистемийн 6 үндсэн чиглэл.
+            Суралцах үйл явцыг хамгийн өндөр үр дүнд хүргэх ухаалаг системийн 6
+            үндсэн тулгуур.
           </p>
         </div>
 
@@ -74,7 +83,7 @@ export default function FeaturesSection() {
               className="bg-white border border-[#EAE7E2] p-6 rounded-3xl shadow-[0_2px_8px_rgba(28,27,24,0.01)] hover:shadow-md transition-shadow duration-350 relative group"
             >
               <div className="absolute -top-[1px] left-8 right-8 h-[2px] bg-brand-orange scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out origin-center rounded-full" />
-              
+
               <div className="flex items-start gap-4">
                 <div className="w-9 h-9 rounded-full bg-[#FF6B35]/10 flex items-center justify-center shrink-0 mb-3 scale-90 group-hover:scale-100 transition-transform duration-300">
                   {feat.icon}

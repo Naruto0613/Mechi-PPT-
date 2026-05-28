@@ -6,39 +6,48 @@ export default function VisionSection() {
     {
       icon: <Users className="w-5 h-5 text-brand-orange" />,
       title: "Монгол залууст хятад хэлийг хялбарчлах",
-      desc: "Хүнд ханзны айдасыг арилгаж, ханз цээжлэх явцыг логик дүрслэлээр хялбархан цэгцэлнэ."
+      desc: " Ханз үсгийн айдсыг арилгаж, цээжлэх хүндрэлийг логик дүрслэлээр дамжуулан хамгийн бүтээмжтэйгээр шийднэ.",
     },
     {
       icon: <Smile className="w-5 h-5 text-brand-orange" />,
-      title: "Хэл сурах сонирхол татам орчин бүтээх",
-      desc: "Хоёр соёлын ухаалаг холбоос бүхий богино хичээлээр сурах хүсэл эрмэлзлийг төрүүлнэ."
+      title: "Сонирхолтой, бүтээлч орчныг бүрдүүлэх",
+      desc: "Хоёр орны соёлын ухаалаг холбоосыг багтаасан богино хичээлүүдээр суралцах тогтвортой сэдэл, эрмэлзлийг төрүүлнэ.",
     },
     {
       icon: <Star className="w-5 h-5 text-brand-orange" />,
-      title: "Илүү ухаалаг суралцах боломж олгох",
-      desc: "Ой тогтоолтын оновчтой давтамж, монгол хүний онцлогт тааруулсан хувийн сургалттай."
-    }
+      title: "Ухаалаг, үр дүнтэй шийдэл олгох",
+      desc: "Ой тогтоолтын оновчтой давтамж болон монгол хүний сэтгэхүйн онцлогт тохирсон, хувийн ухаалаг сургалтын системийг санал болгоно.",
+    },
   ];
 
   return (
-    <section id="vision" className="relative h-screen w-screen flex flex-col justify-between bg-white overflow-hidden p-8 md:p-16 xl:p-20 presentation-bg border-b border-brand-beige">
+    <section
+      id="vision"
+      className="relative h-screen w-screen flex flex-col justify-between bg-white overflow-hidden p-8 md:p-16 xl:p-20 presentation-bg border-b border-brand-beige"
+    >
       <header className="flex justify-between items-start z-10 w-full shrink-0">
         <div className="space-y-1">
           <div className="w-12 h-1 bg-brand-orange rounded-full mb-3"></div>
           <span className="uppercase tracking-[0.3em] text-[10px] md:text-xs font-bold text-[#A5A5A5]">
-            Стартап Танилцуулга / 2026 оны III улирал
+            Mechi Танилцуулга / 2026 он
           </span>
         </div>
       </header>
 
       <div className="flex-grow max-w-6xl w-full mx-auto z-10 flex flex-col justify-center mt-6 lg:mt-0">
         <div className="mb-10 text-left">
-          <div className="font-mono text-xs uppercase tracking-[0.25em] text-[#A5A5A5] font-semibold mb-3">07 / Алсын хараа</div>
+          <div className="font-mono text-xs uppercase tracking-[0.25em] text-[#A5A5A5] font-semibold mb-3">
+            07 / Алсын хараа
+          </div>
           <h2 className="text-4xl md:text-5xl font-display font-light text-brand-charcoal tracking-tight leading-none mb-4 font-sans leading-tight">
-            Бидний зорилго. <span className="italic font-serif text-brand-orange font-medium">Бидний амлалт.</span>
+            Бидний зорилго.{" "}
+            <span className="italic font-serif text-brand-orange font-medium">
+              Бидний амлалт.
+            </span>
           </h2>
           <p className="text-[#7A7A7A] text-sm md:text-base font-light max-w-2xl leading-relaxed">
-            Mechi бол зөвхөн хэл сурах биш, маргаашийн дэлхийн иргэдийг бэлтгэх ухаалаг гарц юм.
+            Mechi бол зөвхөн хэл сурах платформ биш, маргаашийн дэлхийн иргэдийг
+            бэлтгэх ухаалаг гүүр юм.
           </p>
         </div>
 
