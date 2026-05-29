@@ -6,9 +6,9 @@ export default function SlideProgress() {
 
   useEffect(() => {
     const observerOptions = {
-      root: null,
+      root: null, // observation is calculated against the browser viewport
       rootMargin: "0px",
-      threshold: 0.5,
+      threshold: 0.5, // trigger when 50% of the section is visible
     };
 
     const targetSections = SLIDES_METADATA.map((slide) =>
@@ -44,10 +44,12 @@ export default function SlideProgress() {
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-50 pointer-events-none select-none">
+      {/* Tiny slide deck background metadata line */}
       <div className="absolute left-8 bottom-6 font-mono text-[9px] uppercase tracking-[0.2em] text-brand-charcoal/45 hidden sm:block">
         Mechi Стартап Илтгэл — Боловсролын Шинэчлэл
       </div>
 
+      {/* Floating Presentation Slide Indicator Badge */}
       <div className="absolute right-8 bottom-6 flex items-center gap-4 bg-white/80 backdrop-blur-md border border-brand-beige py-2 px-4 rounded-full shadow-sm">
         <span className="font-mono text-xs text-brand-gold font-medium">СЛАЙД</span>
         <span className="font-mono text-xs font-bold text-brand-charcoal">
@@ -59,6 +61,7 @@ export default function SlideProgress() {
         </span>
       </div>
 
+      {/* Discrete horizontal progress bar at the very bottom edge of the viewport */}
       <div className="absolute bottom-0 left-0 right-0 h-1 bg-brand-beige/25">
         <div
           className="h-full bg-brand-orange transition-all duration-700 ease-out rounded-r-full"

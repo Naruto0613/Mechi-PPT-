@@ -52,6 +52,7 @@ export default function SlideNavigation() {
 
   return (
     <>
+      {/* Invisible Hover Zone on Left */}
       <div
         id="nav-zone-left"
         className="fixed left-0 top-0 bottom-0 w-16 sm:w-24 z-40 flex items-center justify-start pl-4 cursor-pointer group select-none pointer-events-auto"
@@ -62,6 +63,7 @@ export default function SlideNavigation() {
         </div>
       </div>
 
+      {/* Invisible Hover Zone on Right */}
       <div
         id="nav-zone-right"
         className="fixed right-0 top-0 bottom-0 w-16 sm:w-24 z-40 flex items-center justify-end pr-4 cursor-pointer group select-none pointer-events-auto"

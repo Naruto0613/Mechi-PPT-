@@ -1,110 +1,106 @@
 import { motion } from "motion/react";
-import { Edit3, BookOpen, Mic2, Compass, Award, Heart } from "lucide-react";
+import { Edit3, BookOpen, Mic2, Compass } from "lucide-react";
 
 export default function FeaturesSection() {
   const features = [
     {
-      icon: <Edit3 className="w-5 h-5 text-brand-orange" />,
-      title: "Ханз тогтоох арга зүй",
-      subtitle: "Тогтоох язгуурууд",
-      text: "Төвөгтэй ханзуудыг монгол хүний сэтгэхүйн онцлогт тохируулан, харааны дүрслэлээр дамжуулж цээжлэлгүйгээр тогтооно.",
+      icon: <Edit3 className="w-4 h-4 text-brand-orange" />,
+      title: "Ханз тогтоох",
+      subtitle: "Дүрст холбоос",
+      text: "Ханзыг адилтгах зураг, дүрсээр холбон хурдан санах ойг хөгжүүлнэ."
     },
     {
-      icon: <BookOpen className="w-5 h-5 text-brand-orange" />,
-      title: "Унших чадвар",
-      subtitle: "Найруулгын бүтэц",
-      text: "Монгол болон хятад хэлний өгүүлбэрийн зүй тогтлыг харьцуулан судалж, орчуулгын шилжилтийг логиктойгоор ойлгоно.",
+      icon: <BookOpen className="w-4 h-4 text-brand-orange" />,
+      title: "Харьцуулсан бүтэц",
+      subtitle: "Унших дасгал",
+      text: "Монгол болон хятад хэлний найруулгын ялгааг тодотгосон бүтцийн зэрэгцүүлэлт."
     },
     {
-      icon: <Mic2 className="w-5 h-5 text-brand-orange" />,
-      title: "Сонсох ба Дуудах чадвар",
-      subtitle: "Аялга удирдах заавар",
-      text: "Монгол хүний авиа зүйн онцлогт суурилан, хятад хэлний 4 үндсэн аялга, дуудлагыг авианы долгионоор зөв эзэмшүүлнэ.",
+      icon: <Mic2 className="w-4 h-4 text-brand-orange" />,
+      title: "Сонсголын дасгал",
+      subtitle: "Аялга удирдамж",
+      text: "Хятад хэлний 4 аялгыг долгионы онцлогоор зөв цэгцлэн сонсох сэрэл суулгана."
     },
     {
-      icon: <Compass className="w-5 h-5 text-brand-orange" />,
-      title: "Үгсийн санг тэлэх",
-      subtitle: "Агуулгад суурилсан давталт",
-      text: "Ухаалаг давталтын алгоритмаар дамжуулан шинэ үгсийг хүчлэн цээжлэх шаардлагагүйгээр урт хугацааны ой санамжид үлдээнэ.",
-    },
-    {
-      icon: <Award className="w-5 h-5 text-brand-orange" />,
-      title: "Шат дараалсан сургалт",
-      subtitle: "Дасан зохицох шатлал",
-      text: "Анхан шатны тэг сууриас эхлэн бизнесийн түвшний чөлөөт яриа хүртэл тасралтгүй ахих системтэй, үе шаттай хичээлүүд.",
-    },
-    {
-      icon: <Heart className="w-5 h-5 text-brand-orange" />,
-      title: "Сурагчид ээлтэй дизайн",
-      subtitle: "Сатаарах зүйлгүй төвлөрөл",
-      text: "Ямар нэгэн зар сурталчилгаа болон сатааруулах хүчин зүйлгүй, зөвхөн сургалтад зориулсан минималист орчин.",
-    },
+      icon: <Compass className="w-4 h-4 text-brand-orange" />,
+      title: "Ухаалаг давталт",
+      subtitle: "Агуулга тогтоох",
+      text: "Ухаалаг хуваарийн давтамжаар ханз болон үгийг цээжлүүлэхгүйгээр тогтоох систем."
+    }
   ];
 
   return (
-    <section
-      id="features"
-      className="relative h-screen w-screen flex flex-col justify-between bg-brand-cream overflow-hidden p-8 md:p-16 xl:p-20 presentation-bg border-b border-brand-beige"
-    >
+    <section id="features" className="relative h-screen w-screen flex flex-col justify-between bg-brand-cream overflow-hidden p-6 sm:p-10 md:p-12 lg:p-14 presentation-bg border-b border-brand-beige">
+      {/* Slide Upper Header Bar */}
       <header className="flex justify-between items-start z-10 w-full shrink-0">
         <div className="space-y-1">
-          <div className="w-12 h-1 bg-brand-orange rounded-full mb-3"></div>
-          <span className="uppercase tracking-[0.3em] text-[10px] md:text-xs font-bold text-[#A5A5A5]">
-            Mechi Танилцуулга / 2026 он
+          <div className="w-16 h-1.5 bg-brand-orange rounded-full mb-3"></div>
+          <span className="uppercase tracking-[0.3em] text-xs sm:text-sm md:text-base font-bold text-[#8A8A8A]">
+            Стартап Танилцуулга / 2026 оны III улирал
           </span>
-        </div>
+         </div>
       </header>
 
-      <div className="flex-1 max-w-6xl w-full mx-auto z-10 flex flex-col justify-center mt-6 lg:mt-0">
-        <div className="mb-8 text-center max-w-2xl mx-auto">
-          <div className="font-mono text-xs uppercase tracking-[0.25em] text-[#A5A5A5] font-semibold mb-3">
-            04 / Бүтээгдэхүүний бүтэц
+      {/* Main Grid Content */}
+      <div className="flex-grow max-w-6xl w-full mx-auto z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center mt-2 lg:mt-0">
+        
+        {/* Left Column: Heading, intro, and a high-quality vertical study photo */}
+        <div className="lg:col-span-5 flex flex-col justify-center gap-4">
+          <div>
+            <div className="font-mono text-xs uppercase tracking-[0.25em] text-[#8A8A8A] font-bold mb-1">04 / ЭКОСИСТЕМИЙН БҮТЭЦ</div>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-display font-bold text-brand-charcoal tracking-tight leading-none mb-2 font-sans leading-tight">
+              Бидний үндсэн <span className="italic font-serif text-brand-orange font-semibold">экосистем.</span>
+            </h2>
+            <p className="text-[#5A5A5A] text-xs sm:text-sm font-light">
+              Суралцагчийн таних мэдэхүйд хамгийн ойр, системтэй ухаалаг экосистемийн 4 суурь модул.
+            </p>
           </div>
-          <h2 className="text-4xl md:text-5xl font-display font-light text-brand-charcoal tracking-tight leading-none mb-4 font-sans max-w-xl mx-auto leading-tight">
-            Бидний үндсэн{" "}
-            <span className="italic font-serif text-brand-orange font-medium">
-              экосистем
-            </span>
-          </h2>
-          <p className="text-[#7A7A7A] text-xs md:text-sm font-light leading-relaxed">
-            Суралцах үйл явцыг хамгийн өндөр үр дүнд хүргэх ухаалаг системийн 6
-            үндсэн тулгуур.
-          </p>
+
+          {/* Premium Education Workspace Photo */}
+          <div className="relative aspect-video lg:aspect-4/3 w-full rounded-2xl overflow-hidden border border-[#EAE7E2] bg-white p-1 shadow-md">
+            <img
+              src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&w=650&q=80"
+              alt="Workspace and notebook illustration"
+              referrerPolicy="no-referrer"
+              className="w-full h-full object-cover rounded-xl"
+            />
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+        {/* Right Column: 2x2 Features Grid */}
+        <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
           {features.map((feat, idx) => (
             <motion.div
               key={idx}
               initial={{ opacity: 0, scale: 0.96 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: idx * 0.05, ease: "easeOut" }}
-              className="bg-white border border-[#EAE7E2] p-6 rounded-3xl shadow-[0_2px_8px_rgba(28,27,24,0.01)] hover:shadow-md transition-shadow duration-350 relative group"
+              transition={{ duration: 0.6, delay: idx * 0.08, ease: "easeOut" }}
+              className="bg-white border-2 border-[#EAE7E2] p-4 rounded-2xl shadow-[0_2px_12px_rgba(28,27,24,0.01)] hover:shadow-md hover:border-brand-orange/20 transition-all duration-300 relative group"
             >
-              <div className="absolute -top-[1px] left-8 right-8 h-[2px] bg-brand-orange scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out origin-center rounded-full" />
-
-              <div className="flex items-start gap-4">
-                <div className="w-9 h-9 rounded-full bg-[#FF6B35]/10 flex items-center justify-center shrink-0 mb-3 scale-90 group-hover:scale-100 transition-transform duration-300">
+              <div className="flex items-center gap-3 mb-2">
+                <div className="w-8 h-8 rounded-full bg-[#FF6B35]/10 flex items-center justify-center shrink-0">
                   {feat.icon}
                 </div>
                 <div>
-                  <span className="text-[9px] uppercase font-mono tracking-wider text-[#A5A5A5] block font-bold">
+                  <span className="text-[9px] uppercase font-mono tracking-wider text-[#8A8A8A] block font-bold">
                     {feat.subtitle}
                   </span>
-                  <h3 className="text-base font-display font-semibold text-brand-charcoal mb-2">
+                  <h3 className="text-sm font-display font-extrabold text-brand-charcoal">
                     {feat.title}
                   </h3>
                 </div>
               </div>
-              <p className="text-xs md:text-sm text-[#7A7A7A] font-light leading-relaxed">
+              <p className="text-xs text-[#5A5A5A] font-light leading-relaxed">
                 {feat.text}
               </p>
             </motion.div>
           ))}
         </div>
+
       </div>
 
+      {/* Slide footer spacer */}
       <footer className="h-4 shrink-0 hidden md:block"></footer>
     </section>
   );
