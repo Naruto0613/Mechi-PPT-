@@ -1,6 +1,6 @@
 {
-  "name": "Mechi",
-  "description": "An elegant, presentation-style website for Mechi, a modern Chinese learning platform for Mongolian students.",
+  "name": "Mechi Presentation",
+  "description": "A stunning, minimalist, and visually attractive single page scrolling presentation for Mechi — a Chinese learning platform for Mongolians.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
