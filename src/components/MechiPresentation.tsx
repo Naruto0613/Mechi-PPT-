@@ -15,6 +15,10 @@ import {
   PenTool,
   HelpCircle,
   AlertCircle,
+  Clock,
+  Target,
+  Volume2,
+  Gift,
 } from "lucide-react";
 
 // Image Placeholder component conforming to parameters:
@@ -140,9 +144,9 @@ export function LandingHeroMockup() {
 
       {/* Internal Mechi Layout header from Screenshot 1 */}
       <div className="border-b border-stone-100 px-4 py-3.5 flex items-center justify-between select-none bg-white">
-        <div className="flex items-center gap-1.5">
-          <div className="w-7 h-7 rounded-full bg-orange-500 flex items-center justify-center font-display font-black text-white text-sm shrink-0">
-            🐼
+        <div className="flex items-center gap-1.5 group cursor-pointer">
+          <div className="w-7 h-7 rounded-full bg-orange-550 flex items-center justify-center font-display font-black text-white text-sm shrink-0 shadow-sm group-hover:scale-105 transition-transform duration-250">
+            <span className="text-sm select-none leading-none">🐼</span>
           </div>
           <span className="font-display font-extrabold text-sm tracking-tight text-orange-600">
             Mechi
@@ -150,13 +154,13 @@ export function LandingHeroMockup() {
         </div>
         <div className="flex items-center gap-2">
           {/* Flame status */}
-          <div className="flex items-center gap-1 px-2.5 py-1 bg-orange-50 border border-orange-100 rounded-full text-[10px] font-bold text-orange-600">
-            <span>🔥</span>
+          <div className="flex items-center gap-1 px-2.5 py-1 bg-orange-50 border border-orange-100 rounded-full text-[10px] font-bold text-orange-600 font-sans">
+            <Flame className="w-3.5 h-3.5 text-orange-500 fill-orange-500/20" />
             <span>1 хоног</span>
           </div>
           {/* XP status */}
-          <div className="flex items-center gap-1 px-2.5 py-1 bg-sky-50 border border-sky-100 rounded-full text-[10px] font-bold text-sky-600">
-            <span>💎</span>
+          <div className="flex items-center gap-1 px-2.5 py-1 bg-sky-50 border border-sky-100 rounded-full text-[10px] font-bold text-sky-600 font-sans">
+            <Gem className="w-3.5 h-3.5 text-sky-500 fill-sky-500/20" />
             <span>145 XP</span>
           </div>
           {/* Circle stats */}
@@ -236,42 +240,42 @@ export function DashboardMockup() {
         <span className="w-2.5 h-2.5 rounded-full bg-red-400 block shrink-0"></span>
         <span className="w-2.5 h-2.5 rounded-full bg-yellow-400 block shrink-0"></span>
         <span className="w-2.5 h-2.5 rounded-full bg-green-400 block shrink-0"></span>
-        <div className="mx-auto bg-stone-150/60 rounded-md text-[10px] font-mono text-stone-500 py-0.5 px-6 max-w-xs truncate">
+        <div className="mx-auto bg-stone-200/50 rounded-md text-[10px] font-mono text-stone-500 py-0.5 px-6 max-w-xs truncate">
           https://mechi-xi.vercel.app/dashboard
         </div>
       </div>
 
       {/* Internal Mechi Layout header from Screenshot 2 */}
       <div className="border-b border-stone-100 px-4 py-3.5 flex flex-wrap items-center justify-between gap-3 select-none bg-white">
-        <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-full bg-orange-500 flex items-center justify-center font-display font-black text-white text-sm shrink-0 animate-pulse">
-            🐼
+        <div className="flex items-center gap-2 group cursor-pointer">
+          <div className="w-7 h-7 rounded-full bg-orange-550 flex items-center justify-center font-display font-black text-white text-sm shrink-0 shadow-sm group-hover:scale-105 transition-transform duration-250">
+            <span className="text-sm select-none leading-none">🐼</span>
           </div>
           <span className="font-display font-extrabold text-sm tracking-tight text-orange-600">
             Mechi
           </span>
-          <span className="bg-emerald-50 text-emerald-600 text-[9px] font-bold px-2 py-0.5 rounded-full border border-emerald-100 flex items-center gap-1">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block"></span>
+          <span className="bg-emerald-50 text-emerald-600 text-[9px] font-bold px-2 py-0.5 rounded-full border border-emerald-100 flex items-center gap-1 font-mono tracking-wider">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span>
             PREMIUM ИДЭВХТЭЙ
           </span>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 font-sans text-[10px]">
           {/* Flame status */}
-          <div className="flex items-center gap-1 px-2.5 py-1 bg-orange-50 border border-orange-100 rounded-full text-[10px] font-bold text-orange-600">
-            <span>🔥</span>
+          <div className="flex items-center gap-1.5 px-2.5 py-1 bg-orange-50 border border-orange-100 rounded-full font-bold text-orange-600">
+            <Flame className="w-3.5 h-3.5 text-orange-500 fill-orange-500/10" />
             <span>1 хоног</span>
           </div>
           {/* XP status */}
-          <div className="flex items-center gap-1 px-2.5 py-1 bg-sky-50 border border-sky-100 rounded-full text-[10px] font-bold text-sky-600">
-            <span>💎</span>
+          <div className="flex items-center gap-1.5 px-2.5 py-1 bg-sky-50 border border-sky-100 rounded-full font-bold text-sky-600">
+            <Gem className="w-3.5 h-3.5 text-sky-500 fill-sky-500/10" />
             <span>145 XP</span>
           </div>
           {/* Circle stats */}
-          <div className="w-5.5 h-5.5 rounded-full bg-orange-50 text-orange-600 font-black text-[10px] flex items-center justify-center">
+          <div className="w-5.5 h-5.5 rounded-full bg-orange-50 text-orange-600 font-extrabold text-[10px] flex items-center justify-center border border-orange-100 font-mono">
             6
           </div>
           {/* User Icon */}
-          <div className="w-6 h-6 rounded-full bg-stone-150/60 flex items-center justify-center text-stone-500 shrink-0">
+          <div className="w-6 h-6 rounded-full bg-stone-100 hover:bg-stone-200 flex items-center justify-center text-stone-500 shrink-0 transition-colors">
             <svg
               className="w-3.5 h-3.5"
               fill="none"
@@ -287,7 +291,7 @@ export function DashboardMockup() {
             </svg>
           </div>
           {/* Logout Icon */}
-          <div className="w-6 h-6 rounded-full bg-stone-150/60 flex items-center justify-center text-stone-400 shrink-0">
+          <div className="w-6 h-6 rounded-full bg-stone-100 hover:bg-stone-200 flex items-center justify-center text-stone-400 hover:text-red-500 shrink-0 transition-colors">
             <svg
               className="w-3.5 h-3.5"
               fill="none"
@@ -306,9 +310,9 @@ export function DashboardMockup() {
       </div>
 
       {/* Premium active access banner from Screenshot 2 */}
-      <div className="bg-emerald-50/40 border-b border-emerald-105 px-4 sm:px-6 py-2.5 flex justify-between items-center text-[10px] sm:text-xs text-emerald-800 font-medium select-none">
+      <div className="bg-emerald-50/40 border-b border-emerald-100 px-4 sm:px-6 py-2.5 flex justify-between items-center text-[10px] sm:text-xs text-emerald-800 font-medium select-none">
         <div className="flex items-center gap-1.5">
-          <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block shrink-0"></span>
+          <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block shrink-0 animate-ping"></span>
           <span>СУРАЛЦАХ ЭРХ: ИДЭВХТЭЙ (PREMIUM)</span>
         </div>
         <div className="flex items-center gap-1.5 shrink-0 text-stone-500">
@@ -337,22 +341,27 @@ export function DashboardMockup() {
             {/* Waving Greetings Card */}
             <div className="bg-white border border-stone-200/50 p-5 rounded-2xl flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 shadow-sm">
               <div>
-                <h3 className="text-lg sm:text-xl font-extrabold text-stone-900 flex items-center gap-1.5">
+                <h3 className="text-lg sm:text-xl font-extrabold text-stone-900 flex items-center gap-2">
                   Сайн байна уу, naranbadrakh!{" "}
-                  <span className="animate-bounce">👋</span>
+                  <span className="inline-block animate-bounce select-none">
+                    👋
+                  </span>
                 </h3>
                 <p className="text-xs text-stone-500 mt-1">
                   Күнзийн хэл сурах аялалаа үргэлжлүүлцгээе.
                 </p>
                 <div className="flex flex-wrap items-center gap-2 mt-3 text-[10px] uppercase font-mono font-bold">
-                  <span className="px-2.5 py-0.5 bg-orange-50 border border-orange-100 rounded-md text-orange-600 flex items-center gap-0.5">
-                    🔥 1 өдөр
+                  <span className="px-2 py-0.5 bg-orange-50 border border-orange-100 rounded-md text-orange-600 flex items-center gap-1">
+                    <Flame className="w-3.5 h-3.5 text-orange-500 fill-orange-550/10" />
+                    1 өдөр
                   </span>
-                  <span className="px-2.5 py-0.5 bg-amber-50 border border-amber-100 rounded-md text-amber-600 flex items-center gap-0.5">
-                    🏆 145 XP
+                  <span className="px-2 py-0.5 bg-amber-50 border border-amber-100 rounded-md text-amber-600 flex items-center gap-1">
+                    <Trophy className="w-3.5 h-3.5 text-amber-500" />
+                    145 XP
                   </span>
-                  <span className="px-2.5 py-0.5 bg-sky-50 border border-sky-100 rounded-md text-sky-600 flex items-center gap-0.5">
-                    🎯 HSK 6
+                  <span className="px-2 py-0.5 bg-sky-50 border border-sky-100 rounded-md text-sky-600 flex items-center gap-1">
+                    <Target className="w-3.5 h-3.5 text-sky-500" />
+                    HSK 6
                   </span>
                 </div>
               </div>
@@ -362,7 +371,7 @@ export function DashboardMockup() {
                 <span className="text-[9px] uppercase font-mono tracking-wider text-stone-400">
                   Өдөр тутмын явц
                 </span>
-                <div className="flex gap-1 mt-1">
+                <div className="flex gap-1 mt-1 font-mono">
                   {[1, 2, 3, 4, 5].map((dayNum) => (
                     <span
                       key={dayNum}
@@ -384,7 +393,9 @@ export function DashboardMockup() {
               <div className="bg-white border border-stone-200/50 p-4.5 rounded-xl flex flex-col justify-between shadow-2xs">
                 <div>
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="text-lg">📖</span>
+                    <div className="w-6 h-6 rounded-md bg-orange-50 flex items-center justify-center text-orange-600 shadow-3xs">
+                      <BookOpen className="w-3.5 h-3.5" />
+                    </div>
                     <h4 className="text-xs sm:text-sm font-extrabold text-stone-850">
                       Үгийн сан
                     </h4>
@@ -398,7 +409,7 @@ export function DashboardMockup() {
                     <span>СУРАЛЦАЖ БУЙ</span>
                     <span>0%</span>
                   </div>
-                  <div className="w-full h-1.5 bg-stone-100 rounded-full overflow-hidden">
+                  <div className="w-full h-1.5 bg-stone-100 rounded-full overflow-hidden font-mono">
                     <div className="w-0 h-full bg-orange-500 rounded-full transition-all"></div>
                   </div>
                 </div>
@@ -408,7 +419,9 @@ export function DashboardMockup() {
               <div className="bg-white border border-stone-200/50 p-4.5 rounded-xl flex flex-col justify-between shadow-box">
                 <div>
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="text-lg">✍️</span>
+                    <div className="w-6 h-6 rounded-md bg-orange-50 flex items-center justify-center text-orange-600 shadow-3xs">
+                      <PenTool className="w-3.5 h-3.5" />
+                    </div>
                     <h4 className="text-xs sm:text-sm font-extrabold text-stone-850">
                       Хэл зүй
                     </h4>
@@ -417,12 +430,12 @@ export function DashboardMockup() {
                     Дүрэм болон өгүүлбэрийн бүтэц.
                   </p>
                 </div>
-                <div className="mt-4 pt-2 border-t border-stone-50">
+                <div className="mt-4 pt-2 border-t border-stone-50 overflow-hidden">
                   <div className="flex justify-between items-center text-[9px] font-mono font-bold text-stone-400 mb-1.5">
                     <span>ЯВЦ</span>
                     <span>0%</span>
                   </div>
-                  <div className="w-full h-1.5 bg-stone-100 rounded-full overflow-hidden">
+                  <div className="w-full h-1.5 bg-stone-100 rounded-full overflow-hidden font-mono">
                     <div className="w-0 h-full bg-orange-500 rounded-full transition-all"></div>
                   </div>
                 </div>
@@ -431,9 +444,11 @@ export function DashboardMockup() {
 
             {/* Split cards for listening and reading */}
             <div className="grid grid-cols-2 gap-4">
-              <div className="bg-white border border-stone-200/55 p-3.5 rounded-xl flex items-center justify-between shadow-2xs hover:bg-stone-50 transition-colors cursor-pointer">
+              <div className="bg-white border border-stone-200/55 p-3.5 rounded-xl flex items-center justify-between shadow-2xs hover:bg-stone-50 transition-colors cursor-pointer group">
                 <div className="flex items-center gap-2">
-                  <span className="text-lg">🎧</span>
+                  <div className="w-6 h-6 rounded-md bg-orange-50 flex items-center justify-center text-orange-600 shadow-3xs group-hover:scale-105 transition-transform">
+                    <Headphones className="w-3.5 h-3.5" />
+                  </div>
                   <span className="text-xs font-bold text-stone-700">
                     Сонсгол
                   </span>
@@ -441,9 +456,11 @@ export function DashboardMockup() {
                 <ChevronDown className="w-3.5 h-3.5 text-stone-400 -rotate-90" />
               </div>
 
-              <div className="bg-white border border-stone-200/55 p-3.5 rounded-xl flex items-center justify-between shadow-2xs hover:bg-stone-50 transition-colors cursor-pointer">
+              <div className="bg-white border border-stone-200/55 p-3.5 rounded-xl flex items-center justify-between shadow-2xs hover:bg-stone-50 transition-colors cursor-pointer group">
                 <div className="flex items-center gap-2">
-                  <span className="text-lg">📝</span>
+                  <div className="w-6 h-6 rounded-md bg-orange-50 flex items-center justify-center text-orange-600 shadow-3xs group-hover:scale-105 transition-transform">
+                    <BookOpenCheck className="w-3.5 h-3.5" />
+                  </div>
                   <span className="text-xs font-bold text-stone-700">
                     Унших
                   </span>
@@ -457,8 +474,11 @@ export function DashboardMockup() {
           <div className="lg:col-span-4 flex flex-col gap-4">
             {/* Daily Tip Widget */}
             <div className="bg-white border border-stone-200/50 p-4 rounded-2xl shadow-sm">
-              <h4 className="text-xs font-black text-stone-800 flex items-center gap-1.5 pb-2 border-b border-stone-100 mb-3 uppercase tracking-wide">
-                ⭐ Өдрийн зөвлөгөө
+              <h4 className="text-xs font-black text-stone-800 flex items-center gap-2 pb-2 border-b border-stone-100 mb-3 uppercase tracking-wide">
+                <div className="w-5 h-5 rounded-md bg-amber-50 flex items-center justify-center text-amber-500 font-bold shrink-0">
+                  <Sparkles className="w-3.5 h-3.5 text-amber-500 fill-amber-500/10 animate-pulse" />
+                </div>
+                <span>Өдрийн зөвлөгөө</span>
               </h4>
               <p className="text-[11px] text-stone-500 italic py-2">
                 Өнөөдөртөө зөвлөгөө алга байна.
@@ -510,16 +530,16 @@ export function LeaderboardMockup() {
         <span className="w-2.5 h-2.5 rounded-full bg-red-400 block shrink-0"></span>
         <span className="w-2.5 h-2.5 rounded-full bg-yellow-400 block shrink-0"></span>
         <span className="w-2.5 h-2.5 rounded-full bg-green-400 block shrink-0"></span>
-        <div className="mx-auto bg-stone-150/60 rounded-md text-[10px] font-mono text-stone-500 py-0.5 px-6 max-w-xs truncate">
+        <div className="mx-auto bg-stone-200/50 rounded-md text-[10px] font-mono text-stone-500 py-0.5 px-6 max-w-xs truncate">
           https://mechi-xi.vercel.app/leaderboard
         </div>
       </div>
 
       {/* Internal Mechi Layout header */}
       <div className="border-b border-stone-100 px-4 py-3.5 flex items-center justify-between select-none bg-white shrink-0">
-        <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-full bg-orange-500 flex items-center justify-center font-display font-black text-white text-sm shrink-0">
-            🐼
+        <div className="flex items-center gap-2 group cursor-pointer">
+          <div className="w-7 h-7 rounded-full bg-orange-550 flex items-center justify-center font-display font-black text-white text-sm shrink-0 shadow-sm group-hover:scale-105 transition-transform duration-250">
+            <span className="text-sm select-none leading-none">🐼</span>
           </div>
           <span className="font-display font-extrabold text-sm tracking-tight text-orange-600">
             Mechi
@@ -528,19 +548,19 @@ export function LeaderboardMockup() {
             ● PREMIUM ИДЭВХТЭЙ
           </span>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 font-mono text-[10px]">
           {/* Flame status */}
-          <div className="flex items-center gap-1 px-2.5 py-1 bg-orange-50 border border-orange-100 rounded-full text-[10px] font-bold text-orange-600">
-            <span>🔥</span>
+          <div className="flex items-center gap-1 px-2.5 py-1 bg-orange-50 border border-orange-100 rounded-full text-orange-600 font-sans font-bold">
+            <Flame className="w-3.5 h-3.5 text-orange-500 fill-orange-500/10" />
             <span>1 хоног</span>
           </div>
           {/* XP status */}
-          <div className="flex items-center gap-1 px-2.5 py-1 bg-sky-50 border border-sky-100 rounded-full text-[10px] font-bold text-sky-600">
-            <span>💎</span>
+          <div className="flex items-center gap-1 px-2.5 py-1 bg-sky-50 border border-sky-100 rounded-full text-sky-600 font-sans font-bold">
+            <Gem className="w-3.5 h-3.5 text-sky-500 fill-sky-500/10" />
             <span>145 XP</span>
           </div>
           {/* Circle stats */}
-          <div className="w-5.5 h-5.5 rounded-full bg-orange-50 text-orange-600 font-black text-[10px] flex items-center justify-center">
+          <div className="w-5.5 h-5.5 rounded-full bg-orange-50 text-orange-600 font-extrabold text-[10px] flex items-center justify-center border border-orange-105 font-mono">
             6
           </div>
         </div>
@@ -578,9 +598,25 @@ export function LeaderboardMockup() {
               >
                 <div className="flex items-center gap-3">
                   {/* Gold/Silver/Bronze column indicator */}
-                  <span className="w-6 text-center font-display text-sm font-black text-stone-500 shrink-0">
-                    {leader.rank}
-                  </span>
+                  <div className="w-8 flex justify-center shrink-0">
+                    {leader.rank === "🥇" ? (
+                      <span className="w-6 h-6 rounded-full bg-amber-400 text-white font-extrabold text-[11px] flex items-center justify-center shadow-xs select-none">
+                        1
+                      </span>
+                    ) : leader.rank === "🥈" ? (
+                      <span className="w-6 h-6 rounded-full bg-stone-300 text-stone-850 font-extrabold text-[11px] flex items-center justify-center shadow-xs select-none">
+                        2
+                      </span>
+                    ) : leader.rank === "🥉" ? (
+                      <span className="w-6 h-6 rounded-full bg-orange-400 text-white font-extrabold text-[11px] flex items-center justify-center shadow-xs select-none">
+                        3
+                      </span>
+                    ) : (
+                      <span className="text-stone-400 font-mono font-bold text-xs">
+                        {leader.rank}
+                      </span>
+                    )}
+                  </div>
 
                   {/* Competitor detail info */}
                   <div>
@@ -591,13 +627,13 @@ export function LeaderboardMockup() {
                         {leader.name}
                       </span>
                       {leader.badge && (
-                        <span className="bg-orange-500 text-white text-[8px] font-black tracking-widest uppercase px-1.5 py-0.5 rounded leading-none">
+                        <span className="bg-orange-550 text-white text-[8px] font-black tracking-widest uppercase px-1.5 py-0.5 rounded leading-none shadow-3xs">
                           {leader.badge}
                         </span>
                       )}
                     </div>
-                    <p className="text-[9px] text-stone-400 uppercase tracking-wider mt-0.5 font-medium">
-                      долоо хоногийн хр
+                    <p className="text-[9px] text-stone-400 uppercase tracking-wider mt-0.5 font-sans font-semibold">
+                      долоо хоногийн xp
                     </p>
                   </div>
                 </div>
@@ -738,24 +774,28 @@ export default function MechiPresentation() {
               className="flex flex-col sm:flex-row gap-4 mb-8"
             >
               <div className="flex items-center gap-3 bg-white border border-stone-150 p-4 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                <span className="text-2xl">🆓</span>
-                <div className="flex flex-col">
-                  <span className="text-xs uppercase font-mono tracking-wider text-stone-400">
+                <div className="w-10 h-10 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center text-orange-600 shrink-0 select-none font-display text-xs font-black tracking-tighter">
+                  FREE
+                </div>
+                <div className="flex flex-col text-left">
+                  <span className="text-[10px] uppercase font-mono tracking-wider text-stone-400">
                     Туршилт
                   </span>
-                  <span className="font-bold text-stone-800 text-lg">
+                  <span className="font-bold text-stone-850 text-sm">
                     1 өдрийн үнэгүй туршилт
                   </span>
                 </div>
               </div>
 
               <div className="flex items-center gap-3 bg-white border border-stone-150 p-4 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                <span className="text-2xl">💎</span>
-                <div className="flex flex-col">
-                  <span className="text-xs uppercase font-mono tracking-wider text-stone-400">
+                <div className="w-10 h-10 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center text-orange-600 shrink-0 select-none">
+                  <Gem className="w-5 h-5 text-orange-500 fill-orange-500/15" />
+                </div>
+                <div className="flex flex-col text-left">
+                  <span className="text-[10px] uppercase font-mono tracking-wider text-stone-400">
                     Төлбөр
                   </span>
-                  <span className="font-bold text-stone-800 text-lg">
+                  <span className="font-bold text-stone-850 text-sm">
                     Сард 15,000₮
                   </span>
                 </div>
@@ -808,26 +848,28 @@ export default function MechiPresentation() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
               {[
                 {
-                  emoji: "😓",
+                  icon: <HelpCircle className="w-6 h-6 text-orange-500" />,
                   text: "Хаанаас эхлэхээ мэдэхгүй",
                   desc: "Уг залгамж холбоогүй, замбараагүй материал дундаас зөвийг олох гэж цаг алдах",
                 },
                 {
-                  emoji: "📚",
+                  icon: <BookOpen className="w-6 h-6 text-orange-500" />,
                   text: "Монголоор тайлбарласан материал байдаггүй",
                   desc: "Англи эсвэл Орос хэл дээрээс дамжуулан адармаатай хэл зүйг ойлгох гэсэн тархины ачаалал",
                 },
                 {
-                  emoji: "⏰",
+                  icon: <Clock className="w-6 h-6 text-orange-500" />,
                   text: "Хэт их цаг, мөнгө зарцуулдаг",
                   desc: "Үнэтэй сургалтын төв эсвэл хувийн багшид асар өндөр төлбөр төлж, хуваарьт хашигдах",
                 },
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="bg-stone-900 border border-stone-800 p-8 rounded-3xl hover:border-orange-500/40 transition-colors shadow-lg"
+                  className="bg-stone-900/60 backdrop-blur-xs border border-stone-800 p-8 rounded-3xl hover:border-orange-500/40 transition-all duration-300 shadow-lg group hover:-translate-y-1"
                 >
-                  <div className="text-5xl mb-6">{item.emoji}</div>
+                  <div className="w-12 h-12 rounded-2xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center mb-6 shadow-sm group-hover:scale-105 transition-transform duration-250">
+                    {item.icon}
+                  </div>
                   <h3 className="text-xl sm:text-2xl font-bold font-display text-white mb-3">
                     "{item.text}"
                   </h3>
@@ -941,15 +983,13 @@ export default function MechiPresentation() {
                     className="bg-white border border-stone-200/80 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center relative group"
                   >
                     <div
-                      className={`w-14 h-14 rounded-full flex items-center justify-center text-2xl mb-4 shadow-sm font-bold ${
-                        step.color.includes("bg-orange-50500")
+                      className={`w-12 h-12 rounded-full flex items-center justify-center mb-4 shadow-xs ${
+                        step.color.includes("text-white")
                           ? "bg-orange-500 text-white"
-                          : step.color.split(" ")[0] +
-                            " " +
-                            step.color.split(" ")[2]
+                          : "bg-orange-50 border border-orange-100 text-orange-500"
                       }`}
                     >
-                      🎯
+                      <Target className="w-5 h-5 shrink-0" />
                     </div>
                     <span className="text-stone-400 font-mono text-xs uppercase tracking-widest">
                       {step.month}
@@ -965,9 +1005,12 @@ export default function MechiPresentation() {
               </div>
             </div>
 
-            <div className="text-center rounded-2xl bg-orange-50/50 border border-orange-500/10 p-6 max-w-3xl mx-auto">
-              <p className="text-lg sm:text-xl lg:text-2xl font-bold font-display text-stone-900 leading-relaxed">
-                💡 Өдөр бүр{" "}
+            <div className="rounded-2xl bg-orange-50/50 border border-orange-500/10 p-6 max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 shrink-0 select-none">
+                <Sparkles className="w-5 h-5 text-orange-500 animate-pulse" />
+              </div>
+              <p className="text-lg sm:text-xl lg:text-xl font-bold font-display text-stone-900 leading-relaxed text-left sm:text-center">
+                Өдөр бүр{" "}
                 <span className="text-orange-500 font-black border-b-2 border-orange-500">
                   5 минут
                 </span>{" "}
@@ -1129,8 +1172,9 @@ export default function MechiPresentation() {
 
               {/* Right card (orange border, glowing, new) */}
               <div className="bg-[#222] border-2 border-orange-500/80 p-8 md:p-10 rounded-3xl flex flex-col justify-between shadow-xl shadow-orange-500/5 relative overflow-hidden group hover:border-orange-500 transition-colors">
-                <div className="absolute top-5 right-5 bg-orange-500/10 text-orange-400 border border-orange-500/20 px-3.5 py-1 rounded-full text-xs font-black font-mono tracking-widest uppercase">
-                  ТУН УДАХГҮЙ 🚀
+                <div className="absolute top-5 right-5 bg-orange-500/10 text-orange-400 border border-orange-500/20 px-3.5 py-1 rounded-full text-xs font-black font-mono tracking-widest uppercase flex items-center gap-1.5 animate-pulse">
+                  <span>ТУН УДАХГҮЙ</span>
+                  <Sparkles className="w-3 h-3 text-orange-400" />
                 </div>
 
                 <div>
@@ -1159,9 +1203,12 @@ export default function MechiPresentation() {
               </div>
             </div>
 
-            <div className="text-center rounded-2xl bg-orange-500/10 border border-orange-500/20 p-8 max-w-4xl mx-auto">
-              <p className="text-lg sm:text-xl lg:text-2xl font-bold font-display text-stone-200 leading-relaxed">
-                📢 HSK 3.0 гарахад Mechi автоматаар шинэчлэгдэнэ. Та нэмэлт
+            <div className="rounded-2xl bg-orange-500/10 border border-orange-500/20 p-8 max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 text-left">
+              <div className="w-12 h-12 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-400 shrink-0 select-none">
+                <Volume2 className="w-5 h-5 text-orange-500 fill-orange-500/10 animate-bounce" />
+              </div>
+              <p className="text-lg sm:text-xl lg:text-xl font-bold font-display text-stone-200 leading-relaxed">
+                HSK 3.0 garaхад Mechi автоматаар шинэчлэгдэнэ. Та нэмэлт
                 төлбөргүйгээр шинэ контентыг ашиглах боломжтой.
               </p>
             </div>
