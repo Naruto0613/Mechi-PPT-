@@ -746,7 +746,7 @@ export default function MechiPresentation() {
             >
               Хятад хэл сурах нь <br />
               <span className="text-orange-500 underline decoration-orange-500/25 decoration-8 underline-offset-8">
-                хэзээ ч энэ хялбар
+                хэзээ ч ийм хялбар
               </span>{" "}
               <br />
               байгаагүй
