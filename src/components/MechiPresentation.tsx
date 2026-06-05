@@ -196,7 +196,6 @@ export function LandingHeroMockup() {
         </div>
       </div>
 
-      {/* Main landing mock hero body */}
       <div className="p-6 md:p-10 flex flex-col justify-center flex-1 relative bg-gradient-to-tr from-white to-orange-50/25">
         <div className="max-w-md relative z-10 text-left">
           <h2 className="text-3xl sm:text-4xl font-extrabold font-display text-stone-900 leading-tight mb-4 tracking-tight">
@@ -209,7 +208,7 @@ export function LandingHeroMockup() {
             сур
           </h2>
           <p className="text-stone-500 text-sm leading-relaxed mb-8 font-sans">
-            HSK шалгалтанд бэлдэх хамгийн хялбар, үр дүнтэй арга. Монгол хэл дээр
+            HSK шалгалтнд бэлдэх хамгийн хялбар, үр дүнтэй арга. Монгол хэл дээр
             тайлбарласан хичээлүүд, тоглоом хэлбэрийн дасгалууд.
           </p>
           <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold font-display text-sm px-6 py-3.5 rounded-xl flex items-center gap-2 shadow-lg shadow-orange-500/20 active:scale-[0.98] transition-all cursor-pointer">
@@ -845,17 +844,14 @@ export default function MechiPresentation() {
                 {
                   icon: <HelpCircle className="w-6 h-6 text-orange-500" />,
                   text: "Хаанаас эхлэхээ мэдэхгүй",
-                  desc: "Системгүй, замбараагүй мэдээллийн далайгаас хэрэгцээт зүйлээ шүүж, цаг хугацаа алдах.",
                 },
                 {
                   icon: <BookOpen className="w-6 h-6 text-orange-500" />,
                   text: "Монголоор тайлбарласан материал байдаггүй",
-                  desc: "Англи эсвэл Орос хэл дээрээс дамжуулан адармаатай хэл зүйг ойлгох гэсэн тархины ачаалал",
                 },
                 {
                   icon: <Clock className="w-6 h-6 text-orange-500" />,
                   text: "Хэт их цаг, мөнгө зарцуулдаг",
-                  desc: "Үнэтэй сургалтын төв эсвэл хувийн багшид асар өндөр төлбөр төлж, хуваарьт хашигдах",
                 },
               ].map((item, index) => (
                 <div
