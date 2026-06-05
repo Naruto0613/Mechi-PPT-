@@ -196,6 +196,7 @@ export function LandingHeroMockup() {
         </div>
       </div>
 
+      {/* Main landing mock hero body */}
       <div className="p-6 md:p-10 flex flex-col justify-center flex-1 relative bg-gradient-to-tr from-white to-orange-50/25">
         <div className="max-w-md relative z-10 text-left">
           <h2 className="text-3xl sm:text-4xl font-extrabold font-display text-stone-900 leading-tight mb-4 tracking-tight">
@@ -208,8 +209,8 @@ export function LandingHeroMockup() {
             сур
           </h2>
           <p className="text-stone-500 text-sm leading-relaxed mb-8 font-sans">
-            HSK шалгалтнд бэлдэх хамгийн хялбар, үр дүнтэй арга. Монгол хэл дээр
-            тайлбарласан хичээлүүд, тоглоом хэлбэрийн дасгалууд.
+            HSK шалгалтанд бэлдэх хамгийн хялбар, үр дүнтэй арга. Монгол хэл
+            дээр тайлбарласан хичээлүүд, тоглоом хэлбэрийн дасгалууд.
           </p>
           <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold font-display text-sm px-6 py-3.5 rounded-xl flex items-center gap-2 shadow-lg shadow-orange-500/20 active:scale-[0.98] transition-all cursor-pointer">
             <span>Одоо эхлэх</span>
@@ -408,7 +409,6 @@ export function DashboardMockup() {
                 </div>
               </div>
 
-              {/* Module 2: Grammar */}
               <div className="bg-white border border-stone-200/50 p-4.5 rounded-xl flex flex-col justify-between shadow-box">
                 <div>
                   <div className="flex items-center gap-2 mb-2">
@@ -663,8 +663,8 @@ export default function MechiPresentation() {
           "hsk",
           "gamification",
           "portfolio",
-          "support",
           "pricing",
+          "support",
           "closing",
         ];
         const sections = sectionIds
@@ -830,7 +830,7 @@ export default function MechiPresentation() {
       >
         <div className="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-20">
           <ScrollSection>
-            <div className="max-w-3xl">
+            <div className="max-w-5xl">
               <span className="text-xs uppercase font-mono tracking-widest text-orange-500 font-bold block mb-3">
                 Хүндрэлүүд
               </span>
@@ -919,9 +919,9 @@ export default function MechiPresentation() {
                   </span>
                 </h3>
                 <p className="text-stone-600 text-lg leading-relaxed">
-                  150-с 5000 хүртэлх үгийг монгол орчуулгатай flashcard
-                  хэлбэрээр тогтоо. Байрлалаа хадгалж, хаанаас зогссоноо
-                  үргэлжлүүл.
+                  HSK 1-ээс 5-р түвшний үгсийг монгол орчуулгатай флашкартаар
+                  хялбархан тогтоогоорой! Сургалтын явцаа хадгалж, зогссон
+                  газраасаа шууд үргэлжлүүлнэ.
                 </p>
               </div>
 
@@ -937,8 +937,8 @@ export default function MechiPresentation() {
                   </span>
                 </h3>
                 <p className="text-stone-600 text-lg leading-relaxed">
-                  Дүрмийг монголоор тайлбарлан жишээ өгүүлбэрээр заана. HSK
-                  түвшин бүрт 10+ дүрмийн хичээл.
+                  Дүрмийг монголоор тайлбарлан жишээ өгүүлбэрээр заана. <br />
+                  HSK түвшин бүрт 10+ дүрмийн хичээл.
                 </p>
               </div>
 
@@ -954,8 +954,9 @@ export default function MechiPresentation() {
                   </span>
                 </h3>
                 <p className="text-stone-600 text-lg leading-relaxed">
-                  Хятад яриа сонсоод ойлгосноо монголоор шалга. HSK түвшин бүрт
-                  10+ дасгал.
+                  Дүрмийг монголоор тайлбарлан жишээ өгүүлбэрээр заана.
+                  <br />
+                  HSK түвшин бүрт 10+ дүрмийн хичээл.
                 </p>
               </div>
 
@@ -992,7 +993,7 @@ export default function MechiPresentation() {
       >
         <div className="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-20">
           <ScrollSection>
-            <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="text-center max-w-5xl mx-auto mb-16">
               <span className="text-xs uppercase font-mono tracking-widest text-orange-600 font-bold block mb-3">
                 Бүтээмж
               </span>
@@ -1123,7 +1124,7 @@ export default function MechiPresentation() {
 
         <div className="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-20 relative z-10">
           <ScrollSection>
-            <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="text-center max-w-5xl mx-auto mb-16">
               <span className="text-xs uppercase font-mono tracking-widest text-orange-500 font-bold block mb-3">
                 Технологийн шинэчлэл
               </span>
@@ -1214,7 +1215,7 @@ export default function MechiPresentation() {
       >
         <div className="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-20">
           <ScrollSection>
-            <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="text-center max-w-5xl mx-auto mb-16">
               <span className="text-xs uppercase font-mono tracking-widest text-orange-500 font-bold block mb-3">
                 Урамшуулал
               </span>
@@ -1259,7 +1260,7 @@ export default function MechiPresentation() {
                   Rating
                 </h3>
                 <p className="text-stone-400 text-lg leading-relaxed max-w-xs">
-                  Бусад сурагчидтай өрсөлд
+                  Бусад сурагчтай өрсөлд
                 </p>
               </div>
             </div>
@@ -1283,12 +1284,12 @@ export default function MechiPresentation() {
 
         <div className="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-20 relative z-10">
           <ScrollSection>
-            <div className="text-center max-w-4xl mx-auto mb-16">
+            <div className="text-center max-w-5xl mx-auto mb-16">
               <span className="text-xs uppercase font-mono tracking-widest text-orange-500 font-bold block mb-3">
                 Сурсан чадварууд
               </span>
-              <h2 className="text-6xl md:text-7xl lg:text-8xl font-black font-display text-white tracking-tight leading-none">
-                Мэдлэгээс бодит бүтээл рүү
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black font-display text-white tracking-tight leading-none">
+                Мэдье, хэрэглэе, үр шимийг нь хүртье!
               </h2>
               <p className="text-lg md:text-xl text-stone-400 mt-5 max-w-2xl mx-auto leading-relaxed">
                 9-р сараас хойш олж авсан мэдлэг, чадвараа нэгтгэн{" "}
@@ -1390,76 +1391,6 @@ export default function MechiPresentation() {
                 </div>
               </div>
             </div>
-
-            <div className="rounded-3xl bg-stone-950/80 border-2 border-orange-500/30 p-6 md:p-8 max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-5 text-left shadow-lg shadow-orange-500/5 hover:border-orange-500/50 transition-all duration-300">
-              <div className="w-14 h-14 rounded-full bg-orange-500/15 border border-orange-500/35 flex items-center justify-center text-orange-450 shrink-0 select-none animate-pulse">
-                <Sparkles className="w-6 h-6 text-orange-500" />
-              </div>
-              <p className="text-lg sm:text-xl text-stone-250 leading-relaxed font-sans font-medium">
-                Олж авсан мэдлэгээ бодит ажил болгож, сурагчдад хятад хэлийг
-                сонирхолтойгоор сурахад туслах{" "}
-                <span className="text-white font-black border-b border-orange-500/60 pb-0.5">Mechi</span>{" "}
-                аппликэйшнийг бүтээлээ.
-              </p>
-            </div>
-          </ScrollSection>
-        </div>
-      </section>
-
-      {/* SECTION 5.8 - SUPPORT/MESSAGE */}
-      <section
-        id="support"
-        className="min-h-screen flex items-center py-24 bg-stone-50 border-t border-b border-stone-200/40 relative overflow-hidden"
-      >
-        {/* Subtle decorative elements matching branding */}
-        <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#f97316_1px,transparent_1px)] [background-size:24px_24px]"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-orange-500/5 rounded-full blur-[140px] pointer-events-none"></div>
-
-        <div className="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-20 relative z-10">
-          <ScrollSection>
-            <div className="max-w-4xl mx-auto text-center">
-              <span className="text-xs uppercase font-mono tracking-widest text-orange-600 font-bold block mb-3">
-                Хөгжүүлэгчийн зурвас
-              </span>
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black font-display text-stone-950 tracking-tight leading-none mb-10">
-                Таны дэмжлэг — Миний урам зориг
-              </h2>
-
-              <div className="bg-white border border-stone-200/80 p-8 md:p-12 rounded-[2.5rem] shadow-xl text-left relative group overflow-hidden max-w-3xl mx-auto">
-                {/* Decorative background circle */}
-                <div className="absolute -top-16 -right-16 w-32 h-32 bg-orange-500/5 rounded-full blur-2xl group-hover:bg-orange-500/10 transition-colors" />
-                
-                {/* Developer Profile header */}
-                <div className="flex items-center gap-4 mb-8">
-                  <div className="w-14 h-14 rounded-full bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-2xl shadow-inner shrink-0 cursor-pointer hover:scale-105 transition-transform duration-250">
-                    🐼
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-black font-display text-stone-900 tracking-tight">naranbadrakh</h4>
-                    <p className="text-xs font-mono text-orange-600 font-semibold tracking-wider uppercase">Mechi үүсгэн байгуулагч</p>
-                  </div>
-                </div>
-
-                {/* Main letter quote block with beautiful spacing and elegant typography */}
-                <blockquote className="text-stone-700 text-lg md:text-xl font-medium leading-relaxed font-sans mb-8 relative">
-                  <span className="text-orange-500/20 font-serif text-7xl absolute -top-8 -left-3 select-none">“</span>
-                  <p className="relative z-10 pl-6 border-l-2 border-orange-500/40 italic">
-                    Би Mechi платформоо Монгол хүн бүрд илүү ойлгомжтой, өгөөжтэй, ашиглахад хялбар байлгахын тулд тасралтгүй хөгжүүлсээр байна. Таны эндээс сурсан шинэ мэдлэг, алхам бүр танд боловсролын үнэ цэнийг бэлэглэхээс гадна надад цаашлан бүтээх асар их урам зориг, дэмжлэг болох юм. Хамтдаа суралцаж, хамтдаа хөгжицгөөе!
-                  </p>
-                </blockquote>
-
-                {/* Call to action or quick reminder */}
-                <div className="mt-6 pt-6 border-t border-stone-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-                  <div className="flex items-center gap-1.5 text-stone-500 text-sm">
-                    <Sparkles className="w-4 h-4 text-orange-500" />
-                    <span>Mechi-тэй хамт хязгааргүй суралц</span>
-                  </div>
-                  <div className="flex items-center gap-1 text-xs font-mono font-bold text-orange-600 bg-orange-50 px-3.5 py-1.5 rounded-xl border border-orange-100 uppercase tracking-widest">
-                    <span>mechi.mn</span>
-                  </div>
-                </div>
-              </div>
-            </div>
           </ScrollSection>
         </div>
       </section>
@@ -1471,7 +1402,7 @@ export default function MechiPresentation() {
       >
         <div className="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-20">
           <ScrollSection>
-            <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="text-center max-w-5xl mx-auto mb-16">
               <span className="text-xs uppercase font-mono tracking-widest text-orange-600 font-bold block mb-3">
                 Тариф
               </span>
@@ -1562,6 +1493,75 @@ export default function MechiPresentation() {
                 <button className="w-full bg-white hover:bg-stone-50 text-orange-600 font-bold font-display text-lg py-4 rounded-2xl shadow-md transition-colors mt-auto">
                   Одоо суралцах
                 </button>
+              </div>
+            </div>
+          </ScrollSection>
+        </div>
+      </section>
+
+      {/* SECTION 5.8 - SUPPORT/MESSAGE */}
+      <section
+        id="support"
+        className="min-h-screen flex items-center py-24 bg-stone-50 border-t border-b border-stone-200/40 relative overflow-hidden"
+      >
+        {/* Subtle decorative elements matching branding */}
+        <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#f97316_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-orange-500/5 rounded-full blur-[140px] pointer-events-none"></div>
+
+        <div className="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-20 relative z-10">
+          <ScrollSection>
+            <div className="max-w-5xl mx-auto text-center">
+              <span className="text-xs uppercase font-mono tracking-widest text-orange-600 font-bold block mb-3">
+                Хөгжүүлэгчийн зурвас
+              </span>
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black font-display text-stone-950 tracking-tight leading-none mb-10">
+                Таны дэмжлэг — Миний урам зориг
+              </h2>
+
+              <div className="bg-white border border-stone-200/80 p-8 md:p-12 rounded-[2.5rem] shadow-xl text-left relative group overflow-hidden max-w-3xl mx-auto">
+                {/* Decorative background circle */}
+                <div className="absolute -top-16 -right-16 w-32 h-32 bg-orange-500/5 rounded-full blur-2xl group-hover:bg-orange-500/10 transition-colors" />
+
+                {/* Developer Profile header */}
+                <div className="flex items-center gap-4 mb-8">
+                  <div className="w-14 h-14 rounded-full bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-2xl shadow-inner shrink-0 cursor-pointer hover:scale-105 transition-transform duration-250">
+                    🐼
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-black font-display text-stone-900 tracking-tight">
+                      naranbadrakh
+                    </h4>
+                    <p className="text-xs font-mono text-orange-600 font-semibold tracking-wider uppercase">
+                      Mechi үүсгэн байгуулагч
+                    </p>
+                  </div>
+                </div>
+
+                {/* Main letter quote block with beautiful spacing and elegant typography */}
+                <blockquote className="text-stone-700 text-lg md:text-xl font-medium leading-relaxed font-sans mb-8 relative">
+                  <span className="text-orange-500/20 font-serif text-7xl absolute -top-8 -left-3 select-none">
+                    “
+                  </span>
+                  <p className="relative z-10 pl-6 border-l-2 border-orange-500/40 italic">
+                    Би Mechi платформоо Монгол хүн бүрд илүү ойлгомжтой,
+                    өгөөжтэй, ашиглахад хялбар байлгахын тулд тасралтгүй
+                    хөгжүүлсээр байна. Таны эндээс сурсан шинэ мэдлэг, алхам бүр
+                    танд боловсролын үнэ цэнийг бэлэглэхээс гадна надад цаашлан
+                    бүтээх асар их урам зориг, дэмжлэг болох юм. Хамтдаа
+                    суралцаж, хамтдаа хөгжицгөөе!
+                  </p>
+                </blockquote>
+
+                {/* Call to action or quick reminder */}
+                <div className="mt-6 pt-6 border-t border-stone-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+                  <div className="flex items-center gap-1.5 text-stone-500 text-sm">
+                    <Sparkles className="w-4 h-4 text-orange-500" />
+                    <span>Mechi-тэй хамт хязгааргүй суралц</span>
+                  </div>
+                  <div className="flex items-center gap-1 text-xs font-mono font-bold text-orange-600 bg-orange-50 px-3.5 py-1.5 rounded-xl border border-orange-100 uppercase tracking-widest">
+                    <span>mechi.mn</span>
+                  </div>
+                </div>
               </div>
             </div>
           </ScrollSection>
