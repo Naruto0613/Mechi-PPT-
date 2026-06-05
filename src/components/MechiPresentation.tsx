@@ -24,12 +24,6 @@ import {
   GraduationCap,
 } from "lucide-react";
 
-// Image Placeholder component conforming to parameters:
-// - dashed orange border
-// - light orange background (#FFF7ED)
-// - min height 300px
-// - centered text "[ Screenshot энд орно ]" in orange
-// Now supports direct image loading via 'src' prop!
 export function ImagePlaceholder({
   text = "[ Screenshot энд орно ]",
   className = "",
@@ -44,7 +38,6 @@ export function ImagePlaceholder({
       <div
         className={`relative rounded-3xl overflow-hidden shadow-xl border border-stone-200/55 bg-white group hover:shadow-2xl transition-all duration-300 ${className}`}
       >
-        {/* Browser shell header mock mock-up to make the screenshot look extremely premium */}
         <div className="bg-stone-100 px-4 py-3 border-b border-stone-250/40 flex items-center gap-1.5 select-none shrink-0">
           <span className="w-3 h-3 rounded-full bg-red-400 block"></span>
           <span className="w-3 h-3 rounded-full bg-yellow-400 block"></span>
@@ -68,7 +61,6 @@ export function ImagePlaceholder({
       id="placeholder-image"
       className={`border-3 border-dashed border-orange-500/70 bg-[#FFF7ED] rounded-3xl flex flex-col items-center justify-center min-h-[300px] p-8 text-center select-none shadow-sm hover:shadow-md transition-all duration-300 hover:border-orange-500 group relative overflow-hidden ${className}`}
     >
-      {/* Premium subtle mesh grid decoration for "WOW" effect */}
       <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#f97316_1px,transparent_1px)] [background-size:20px_20px]"></div>
 
       <div className="flex flex-col items-center gap-4 relative z-10">
@@ -104,7 +96,6 @@ export function ImagePlaceholder({
   );
 }
 
-// Fade in and slide up transition component powered by useInView
 function ScrollSection({
   children,
   className = "",
@@ -1551,20 +1542,19 @@ export default function MechiPresentation() {
             <div className="flex justify-center items-center">
               <div
                 id="qr-container"
-                className="bg-white p-8 rounded-4xl shadow-2xl shadow-orange-500/10 border-2 border-orange-500 flex flex-col items-center gap-4 hover:scale-[1.03] transition-transform duration-300 max-w-xs"
+                className="bg-white p-8 rounded-4xl shadow-2xl shadow-orange-500/10 border-2 border-orange-500 flex flex-col items-center gap-4 hover:scale-[1.03] transition-transform duration-300 max-w-md"
               >
                 <div className="relative p-2 bg-white rounded-2xl">
                   <img
-                    src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://mechi-xi.vercel.app&color=1a1a1a"
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=600x600&data=https://mechi-xi.vercel.app&color=1a1a1a"
                     alt="Mechi QR Code link to mechi-xi.vercel.app"
-                    className="w-48 h-48 sm:w-56 sm:h-56 select-none pointer-events-none"
+                    className="w-80 h-80 sm:w-96 sm:h-96 select-none pointer-events-none"
                     referrerPolicy="no-referrer"
                   />
-                  {/* Subtle decorative inner corner brackets */}
-                  <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-orange-500"></div>
-                  <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-orange-500"></div>
-                  <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-orange-500"></div>
-                  <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-orange-500"></div>
+                  <div className="absolute top-0 left-0 w-5 h-5 border-t-2 border-l-2 border-orange-500"></div>
+                  <div className="absolute top-0 right-0 w-5 h-5 border-t-2 border-r-2 border-orange-500"></div>
+                  <div className="absolute bottom-0 left-0 w-5 h-5 border-b-2 border-l-2 border-orange-500"></div>
+                  <div className="absolute bottom-0 right-0 w-5 h-5 border-b-2 border-r-2 border-orange-500"></div>
                 </div>
                 <div className="text-center font-mono text-stone-900">
                   <p className="text-sm font-bold tracking-tight uppercase text-stone-500">
@@ -1579,35 +1569,6 @@ export default function MechiPresentation() {
           </ScrollSection>
         </div>
       </section>
-
-      {/* Modern footer */}
-      <footer
-        id="system-footer"
-        className="bg-stone-900 text-stone-500 py-12 px-6 border-t border-stone-850"
-      >
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-2">
-            <span className="w-7 h-7 rounded-lg bg-orange-500 flex items-center justify-center font-display font-black text-white text-sm shadow-sm">
-              M
-            </span>
-            <span className="font-display font-bold text-stone-100 text-lg">
-              Mechi
-            </span>
-          </div>
-          <p className="text-sm">
-            © {new Date().getFullYear()} Mechi LLC. Монголчуудад зориулсан хятад
-            хэл сурах платформ.
-          </p>
-          <div className="flex gap-4 text-sm">
-            <span className="hover:text-stone-300 transition-colors cursor-pointer">
-              Ашиглах заавар
-            </span>
-            <span className="hover:text-stone-300 transition-colors cursor-pointer">
-              Үйлчилгээний нөхцөл
-            </span>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
