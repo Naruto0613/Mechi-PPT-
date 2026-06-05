@@ -209,8 +209,8 @@ export function LandingHeroMockup() {
             сур
           </h2>
           <p className="text-stone-500 text-sm leading-relaxed mb-8 font-sans">
-            HSK шалгалтанд бэлдэх хамгийн хялбар, үр дүнтэй арга. Монгол хэл
-            дээр тайлбарласан хичээлүүд, тоглоом хэлбэрийн дасгалууд.
+            HSK шалгалтанд бэлдэх хамгийн хялбар, үр дүнтэй арга. Монгол хэл дээр
+            тайлбарласан хичээлүүд, тоглоом хэлбэрийн дасгалууд.
           </p>
           <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold font-display text-sm px-6 py-3.5 rounded-xl flex items-center gap-2 shadow-lg shadow-orange-500/20 active:scale-[0.98] transition-all cursor-pointer">
             <span>Одоо эхлэх</span>
@@ -1402,9 +1402,7 @@ export default function MechiPresentation() {
               <p className="text-lg sm:text-xl text-stone-250 leading-relaxed font-sans font-medium">
                 Олж авсан мэдлэгээ бодит ажил болгож, сурагчдад хятад хэлийг
                 сонирхолтойгоор сурахад туслах{" "}
-                <span className="text-white font-black border-b border-orange-500/60 pb-0.5">
-                  Mechi
-                </span>{" "}
+                <span className="text-white font-black border-b border-orange-500/60 pb-0.5">Mechi</span>{" "}
                 аппликэйшнийг бүтээлээ.
               </p>
             </div>
@@ -1434,34 +1432,23 @@ export default function MechiPresentation() {
               <div className="bg-white border border-stone-200/80 p-8 md:p-12 rounded-[2.5rem] shadow-xl text-left relative group overflow-hidden max-w-3xl mx-auto">
                 {/* Decorative background circle */}
                 <div className="absolute -top-16 -right-16 w-32 h-32 bg-orange-500/5 rounded-full blur-2xl group-hover:bg-orange-500/10 transition-colors" />
-
+                
                 {/* Developer Profile header */}
                 <div className="flex items-center gap-4 mb-8">
                   <div className="w-14 h-14 rounded-full bg-orange-500/10 border border-orange-500/20 flex items-center justify-center text-2xl shadow-inner shrink-0 cursor-pointer hover:scale-105 transition-transform duration-250">
                     🐼
                   </div>
                   <div>
-                    <h4 className="text-lg font-black font-display text-stone-900 tracking-tight">
-                      naranbadrakh
-                    </h4>
-                    <p className="text-xs font-mono text-orange-600 font-semibold tracking-wider uppercase">
-                      Mechi үүсгэн байгуулагч
-                    </p>
+                    <h4 className="text-lg font-black font-display text-stone-900 tracking-tight">naranbadrakh</h4>
+                    <p className="text-xs font-mono text-orange-600 font-semibold tracking-wider uppercase">Mechi үүсгэн байгуулагч</p>
                   </div>
                 </div>
 
                 {/* Main letter quote block with beautiful spacing and elegant typography */}
                 <blockquote className="text-stone-700 text-lg md:text-xl font-medium leading-relaxed font-sans mb-8 relative">
-                  <span className="text-orange-500/20 font-serif text-7xl absolute -top-8 -left-3 select-none">
-                    “
-                  </span>
+                  <span className="text-orange-500/20 font-serif text-7xl absolute -top-8 -left-3 select-none">“</span>
                   <p className="relative z-10 pl-6 border-l-2 border-orange-500/40 italic">
-                    Би Mechi платформоо Монгол хүн бүрд илүү ойлгомжтой,
-                    өгөөжтэй, ашиглахад хялбар байлгахын тулд тасралтгүй
-                    хөгжүүлсээр байна. Таны эндээс сурсан шинэ мэдлэг, алхам бүр
-                    танд боловсролын үнэ цэнийг бэлэглэхээс гадна надад цаашлан
-                    бүтээх асар их урам зориг, дэмжлэг болох юм. Хамтдаа
-                    суралцаж, хамтдаа хөгжицгөөе!
+                    Би Mechi платформоо Монгол хүн бүрд илүү ойлгомжтой, өгөөжтэй, ашиглахад хялбар байлгахын тулд тасралтгүй хөгжүүлсээр байна. Таны эндээс сурсан шинэ мэдлэг, алхам бүр танд боловсролын үнэ цэнийг бэлэглэхээс гадна надад цаашлан бүтээх асар их урам зориг, дэмжлэг болох юм. Хамтдаа суралцаж, хамтдаа хөгжицгөөе!
                   </p>
                 </blockquote>
 
